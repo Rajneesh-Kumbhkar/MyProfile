@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background: #000000;  
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+.container{
+    position: absolute;
+    margin-left: 20px;
+    top: 30%;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    z-index: 600;
+    color: whitesmoke;
+}
+.container h1{
+    font-size: 3rem;
+    background: transparent;
+    
+}
+.square1{
+    position: absolute;
+    top: 20%;
+    left: 23.2%;
+    display: flex;
+    justify-content:flex-end;
+    border: 3px solid yellow;
+    
+}
+.square1:hover{
+    box-shadow: 0 0 10px yellow , 0 0 10px yellow inset;
+}
+.square2{
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    border: 3px solid red;
+    
+}
+.square2:hover{
+    box-shadow: 0 0 20px red , 0 0 10px red inset;
+}
+.square2 a:hover{
+    background:linear-gradient(to right, #434343, #000000);
+    border-radius: 10px ;
+    color: cyan;
+
+    /* box-shadow: 5px 5px 5px red, -5px -5px 5px red; */
+}
+.developer{
+    position: absolute;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top:-100px ;
+    font-size: 5rem;
+    left: 40.2%;
+    color: #000000;
+    writing-mode: vertical-rl;
+}
+.container p{
+    color: #000000;
+    font-size:20px;
+}
+.square1 img{
+    overflow: hidden;
+    /* filter: drop-shadow(2px 2px 2px #000);     */
+    height: 360px;
+
+}
+.wave{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 5px;
+    height: 150px;
+    background: linear-gradient(45deg, cyan , #fff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+}
+
+.line:nth-child(2){
+    animation-delay: 0.1s;
+}
+.line:nth-child(2){
+    animation-delay: 0.2s;
+}
+.line:nth-child(3){
+    animation-delay: 0.3s;
+}
+.line:nth-child(4){
+    animation-delay: 0.4s;
+}
+.line:nth-child(5){
+    animation-delay: 0.5s;
+}
+.line:nth-child(6){
+    animation-delay: 0.6s;
+}
+.line:nth-child(7){
+    animation-delay: 0.7s;
+}
+.line:nth-child(8){
+    animation-delay: 0.8s;
+}
+.line:nth-child(9){
+    animation-delay: 0.9s;
+}
+.line:nth-child(10){
+    animation-delay: 0.10s;
+}
+@keyframes wave{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
